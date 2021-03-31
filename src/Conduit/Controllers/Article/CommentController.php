@@ -6,7 +6,7 @@ use Conduit\Models\Article;
 use Conduit\Models\Comment;
 use Conduit\Transformers\ArticleTransformer;
 use Conduit\Transformers\CommentTransformer;
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 use League\Fractal\Resource\Collection;
 use League\Fractal\Resource\Item;
 use Slim\Http\Request;
@@ -28,7 +28,7 @@ class CommentController
     /**
      * UserController constructor.
      *
-     * @param \Interop\Container\ContainerInterface $container
+     * @param \Psr\Container\ContainerInterface $container
      *
      * @internal param $auth
      */

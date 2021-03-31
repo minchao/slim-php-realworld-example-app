@@ -5,7 +5,7 @@ namespace Conduit\Controllers\Article;
 use Conduit\Models\Article;
 use Conduit\Models\Tag;
 use Conduit\Transformers\ArticleTransformer;
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 use League\Fractal\Resource\Collection;
 use League\Fractal\Resource\Item;
 use Slim\Http\Request;
@@ -27,7 +27,7 @@ class ArticleController
     /**
      * UserController constructor.
      *
-     * @param \Interop\Container\ContainerInterface $container
+     * @param \Psr\Container\ContainerInterface $container
      *
      * @internal param $auth
      */

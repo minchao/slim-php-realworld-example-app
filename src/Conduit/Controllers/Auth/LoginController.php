@@ -4,7 +4,7 @@ namespace Conduit\Controllers\Auth;
 
 use Conduit\Models\User;
 use Conduit\Transformers\UserTransformer;
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 use League\Fractal\Resource\Item;
 use Slim\Http\Request;
 use Slim\Http\Response;
@@ -25,7 +25,7 @@ class LoginController
     /**
      * RegisterController constructor.
      *
-     * @param \Interop\Container\ContainerInterface $container
+     * @param \Psr\Container\ContainerInterface $container
      */
     public function __construct(ContainerInterface $container)
     {

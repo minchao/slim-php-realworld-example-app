@@ -2,7 +2,7 @@
 
 namespace Conduit\Services\Auth;
 
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 

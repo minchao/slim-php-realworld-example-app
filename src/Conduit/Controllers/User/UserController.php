@@ -3,7 +3,7 @@
 namespace Conduit\Controllers\User;
 
 use Conduit\Transformers\UserTransformer;
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 use League\Fractal\Resource\Item;
 use Slim\Http\Request;
 use Slim\Http\Response;
@@ -24,7 +24,7 @@ class UserController
     /**
      * UserController constructor.
      *
-     * @param \Interop\Container\ContainerInterface $container
+     * @param \Psr\Container\ContainerInterface $container
      *
      * @internal param $auth
      */

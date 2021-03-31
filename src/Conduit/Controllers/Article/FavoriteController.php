@@ -4,7 +4,7 @@ namespace Conduit\Controllers\Article;
 
 use Conduit\Models\Article;
 use Conduit\Transformers\ArticleTransformer;
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 use League\Fractal\Resource\Item;
 use Slim\Http\Request;
 use Slim\Http\Response;
@@ -20,7 +20,7 @@ class FavoriteController
     /**
      * UserController constructor.
      *
-     * @param \Interop\Container\ContainerInterface $container
+     * @param \Psr\Container\ContainerInterface $container
      *
      * @internal param $auth
      */

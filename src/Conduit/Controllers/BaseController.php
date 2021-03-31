@@ -2,20 +2,20 @@
 
 namespace Conduit\Controllers;
 
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 
 class BaseController
 {
 
     /**
-     * @var \Interop\Container\ContainerInterface
+     * @var \Psr\Container\ContainerInterface
      */
     protected $container;
 
     /**
      * BaseController constructor.
      *
-     * @param \Interop\Container\ContainerInterface $container
+     * @param \Psr\Container\ContainerInterface $container
      */
     public function __construct(ContainerInterface $container)
     {

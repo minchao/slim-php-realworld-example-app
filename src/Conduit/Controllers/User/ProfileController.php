@@ -5,7 +5,7 @@ namespace Conduit\Controllers\User;
 use Conduit\Models\User;
 use Conduit\Transformers\ProfileTransformer;
 use Conduit\Transformers\UserTransformer;
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 use League\Fractal\Resource\Item;
 use Slim\Http\Request;
 use Slim\Http\Response;
@@ -21,7 +21,7 @@ class ProfileController
     /**
      * UserController constructor.
      *
-     * @param \Interop\Container\ContainerInterface $container
+     * @param \Psr\Container\ContainerInterface $container
      *
      * @internal param $auth
      */

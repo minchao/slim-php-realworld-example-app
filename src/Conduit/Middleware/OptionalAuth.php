@@ -2,21 +2,21 @@
 
 namespace Conduit\Middleware;
 
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 use Slim\DeferredCallable;
 
 class OptionalAuth
 {
 
     /**
-     * @var \Interop\Container\ContainerInterface
+     * @var \Psr\Container\ContainerInterface
      */
     private $container;
 
     /**
      * OptionalAuth constructor.
      *
-     * @param \Interop\Container\ContainerInterface $container
+     * @param \Psr\Container\ContainerInterface $container
      *
      * @internal param \Slim\Middleware\JwtAuthentication $jwt
      */
