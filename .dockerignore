@@ -1,0 +1,13 @@
+/.git*
+/.idea*
+/.travis.yml
+/docs
+/scripts
+/tests
+/vendor
+.dockerignore
+.env*
+docker-compose*
+Dockerfile*
+phpunit.xml
+Procfile

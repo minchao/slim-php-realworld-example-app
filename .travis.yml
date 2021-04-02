@@ -1,11 +1,15 @@
 language: php
 
 php:
-  - 7.0
-  - 7.1
+  - 7.4
+
+branches:
+  only:
+    - docker
 
 env:
   global:
+    - XDEBUG_MODE=coverage
     - DEFAULT_COMPOSER_FLAGS="--no-interaction --no-ansi --no-progress --no-suggest"
     - JWT_SECRET=supersecretkeyyoushouldnotcommittogithub
 
@@ -15,3 +19,12 @@ before_script:
 
 script: vendor/bin/phpunit
 
+before_deploy:
+  - docker build -t ${DOCKER_USERNAME}/slim-php-realworld-example-app .
+  - docker images
+
+deploy:
+  provider: script
+  script: bash ./scripts/docker_push.sh
+  on:
+    branch: docker
